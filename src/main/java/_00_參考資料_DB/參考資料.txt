@@ -1,0 +1,3 @@
+
+【Struts2 convention plugin 配置项功能说明】
+http://mib168.iteye.com/blog/2009576

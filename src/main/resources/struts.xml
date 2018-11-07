@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<!-- struts.xml檔建議分而治之，意旨分工寫在xml檔中後再引入 -->
+	<!-- 可以用<include file="xx.xml" />的方式來引入設定，使<struts>檔不會太肥大 -->
+
+	<!-- struts.devMode代表是開發模式，正式上線時要改成false -->
+	<!-- 同功能的action會宣告在同一個package裡面 ，package可以互相繼承如下extends="struts-default" -->
+	<constant name="struts.devMode" value="true" />
+	
+	<!-- 设置默认的父包 -->
+	<constant name="struts.convention.default.parent.package" value="convention-default"/>
+
+	<!-- 默认所有的结果页面都存储在WEB-INF/content下，你可以通过设置struts.convention.result.path这个属性的值来改变到其他路径 -->	
+	<constant name="struts.convention.result.path" value="/WEB-INF/pages/" />  
+	
+	<!-- 搜索的Action资源包路径，无论层级，例如package.action，多项以逗号隔开-->
+	<constant name="struts.convention.package.locators" value="action,actions,struts,struts2"/>
+	
+	<!-- 指定哪些包不搜索 -->
+	<constant name="struts.convention.exclude.packages" value="com.ctbc.controller.*"/>
+	
+	<!-- 默认返回结果类型 -->
+	<constant name="struts.convention.relative.result.types" value="dispatcher"/>
+	
+	<!-- 是否自动重新加载action -->
+	<constant name="struts.convention.classes.reload" value="false"/>
+	
+	<!--加入 Spring -->    
+    <constant name="struts.objectFactory" value="spring"/> 
+	
+</struts>
+
