@@ -1,3 +1,12 @@
 
 【Struts2 convention plugin 配置项功能说明】
 http://mib168.iteye.com/blog/2009576
+
+【Struts2檔案上傳 + $.ajaxFileupload】
+https://www.cnblogs.com/xiaoMzjm/p/3879103.html
+
+【struts2入门（5）--Struts2的拦截器】
+https://blog.csdn.net/sgx425021234/article/details/8635782
+
+【struts2文件上传，获取文件名和文件类型 】
+https://my.oschina.net/zhongwenhao/blog/651650

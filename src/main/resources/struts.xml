@@ -33,5 +33,10 @@
 	<!--加入 Spring -->    
     <constant name="struts.objectFactory" value="spring"/> 
 	
+	<!-- struts.multipart.maxSize 掌控整个项目所上传文件的最大的Size。超过了这个size，后台报错，程序处理不了如此大的文件 -->
+	<!-- https://my.oschina.net/iyinghui/blog/541296 -->
+	<constant name="struts.multipart.maxSize" value="9000000"/>
+	
+	
 </struts>
 
