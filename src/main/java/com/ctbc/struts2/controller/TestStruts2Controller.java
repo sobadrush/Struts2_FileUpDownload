@@ -27,7 +27,7 @@ public class TestStruts2Controller extends ActionSupport {
 	@Autowired
 	private DataSource ds;
 	
-	@Action(value = "/myTest", results = { 
+	@Action(value = "myTest", results = { 
 		@Result(name = "success" , type = "dispatcher" , location = "/WEB-INF/pages/result.jsp" ) 
 	})
 	public String myTest() {
