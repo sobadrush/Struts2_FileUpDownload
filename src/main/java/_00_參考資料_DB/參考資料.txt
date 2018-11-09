@@ -8,5 +8,11 @@ https://www.cnblogs.com/xiaoMzjm/p/3879103.html
 【struts2入门（5）--Struts2的拦截器】
 https://blog.csdn.net/sgx425021234/article/details/8635782
 
-【struts2文件上传，获取文件名和文件类型 】
+【struts2文件上传，获取文件名和文件类型】
 https://my.oschina.net/zhongwenhao/blog/651650
+
+【Struts 2 注解实现Action返回JSON数据】
+https://blog.csdn.net/gybshen/article/details/79230155
+
+【jQuery form插件--ajaxFrom和ajaxSubmit的使用 ---> 总结：建议使用ajaxSubmit来提交表单，因为它可以在任何时刻都能提交。】
+https://blog.csdn.net/kong_lev/article/details/73694855
