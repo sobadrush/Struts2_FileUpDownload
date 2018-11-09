@@ -83,11 +83,18 @@
 		    <version>${sqljdbc-version}</version> 
 		</dependency>
         
-        <!-- STRUTS2-SPRING-PLUGIN -->
+        <!-- Struts2-SPRING-PLUGIN -->
         <!-- Struts2 中使用 @Autowired -->
 		<dependency>
 		    <groupId>org.apache.struts</groupId>
 		    <artifactId>struts2-spring-plugin</artifactId>
+		    <version>${struts2-version}</version>
+		</dependency>
+        
+         <!-- Struts2-JSON-PLUGIN -->
+		<dependency>
+		    <groupId>org.apache.struts</groupId>
+		    <artifactId>struts2-json-plugin</artifactId>
 		    <version>${struts2-version}</version>
 		</dependency>
         
@@ -97,7 +104,6 @@
 		    <artifactId>commons-io</artifactId>
 		    <version>2.6</version>
 		</dependency>
-        
         
     </dependencies>
     <build>
