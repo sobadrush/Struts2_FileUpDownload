@@ -55,7 +55,8 @@ public class FileUploadController extends ActionSupport {
 					"maximumSize" , "2048000" /*2MB*/
 				}
 			),
-			@InterceptorRef("defaultStack") // 要加這行才取得到 myFilename
+			@InterceptorRef("fileUploadStack") // 要加上Struts2攔截器，才會work
+			// @InterceptorRef("defaultStack") // 可去 struts-default.xml 中查看要用哪個 stack
 		}
 	)
 	public String fileUploadAction() {
@@ -84,7 +85,9 @@ public class FileUploadController extends ActionSupport {
 						"maximumSize" , "2048000" /*2MB*/
 					}
 			),
-			@InterceptorRef("defaultStack") // 要加這行才取得到 myFilename
+			@InterceptorRef("fileUploadStack") // 要加上Struts2攔截器，才會work
+			// @InterceptorRef("basicStack") // 可去 struts-default.xml 中查看要用哪個 stack
+			// @InterceptorRef("defaultStack") // 可去 struts-default.xml 中查看要用哪個 stack
 		}
 	)
 	public String fileUploadJsonAction() {
