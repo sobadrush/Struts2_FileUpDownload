@@ -32,6 +32,8 @@ public class TestStruts2Controller extends ActionSupport {
 	@Autowired
 	private DataSource ds;
 
+	private String dirtyWord;
+	
 	private Map<String, Object> resultFuckMap;
 	
 	@Action(value = "myTest", results = { 
@@ -39,7 +41,6 @@ public class TestStruts2Controller extends ActionSupport {
 	})
 	public String myTest() {
 		System.out.println("================ myTest() ================");
-		
 		try {
 			System.out.println("DatabaseProductName >>> " + ds.getConnection().getMetaData().getDatabaseProductName());
 		} catch (SQLException e) {
@@ -51,10 +52,12 @@ public class TestStruts2Controller extends ActionSupport {
 	
 	// URL : http://localhost:8080/Struts2_FileUpDownload/TestStruts2Controller/myTestJson.action
 	@Action(value = "myTestJson", results = { 
-			@Result(name = SUCCESS , type = "json" , params = { "root" , "resultFuckMap" } ) 
+			@Result(name = "success" , type = "json" , params = { "root" , "resultFuckMap" } ) 
 	})
 	public String myTestJson() {
 		System.out.println("================ myTestJson() ================");
+		System.out.println(" dirtyWord = " + dirtyWord);
+		
 		List<String> listA = new ArrayList<>();
 		listA.add("華農兄弟");
 		listA.add("這樣不行唷");
@@ -62,7 +65,7 @@ public class TestStruts2Controller extends ActionSupport {
 		
 		resultFuckMap = new HashMap<>();
 		resultFuckMap.put("listA", listA);
-		return SUCCESS;
+		return ActionSupport.SUCCESS;
 	}
 
 	public Map<String, Object> getResultFuckMap() {
@@ -73,8 +76,12 @@ public class TestStruts2Controller extends ActionSupport {
 		this.resultFuckMap = resultFuckMap;
 	}
 
+	public String getDirtyWord() {
+		return dirtyWord;
+	}
+
+	public void setDirtyWord(String dirtyWord) {
+		this.dirtyWord = dirtyWord;
+	}
+
 }
-
-
-
-
