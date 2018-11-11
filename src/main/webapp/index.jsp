@@ -23,6 +23,10 @@
       <s:url action="myTest" namespace="/TestStruts2Controller"/>
       <a href='<s:url action="myTest" namespace="/TestStruts2Controller"/>'>Click_Struts2</a>
 		      
+      <hr>
+      
+      <p><a href="<s:url action='fileDownloadAction' namespace="/FileDownloadController"/>">下載檔案</a></p>
+      		      
       <hr>		      
 		  
       <form action='<s:url action="fileUploadAction" namespace="/FileUploadController"/>' method="POST" enctype="multipart/form-data" style="border: solid 1px black;">
