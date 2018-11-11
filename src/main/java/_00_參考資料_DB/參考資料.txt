@@ -16,3 +16,6 @@ https://blog.csdn.net/gybshen/article/details/79230155
 
 【jQuery form插件--ajaxFrom和ajaxSubmit的使用 ---> 总结：建议使用ajaxSubmit来提交表单，因为它可以在任何时刻都能提交。】
 https://blog.csdn.net/kong_lev/article/details/73694855
+
+【]struts2的json插件配置详解(附demo)】
+http://cqjava.iteye.com/blog/465495
